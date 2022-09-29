@@ -39,7 +39,7 @@ class UI {
     const form = document.querySelector("#book-form");
     container.insertBefore(div, form);
 
-    setTimeout(() => document.querySelector(".alert").remove(), 3000);
+    setTimeout(() => document.querySelector(".alert").remove(), 1000);
   }
 
   static clearFields() {
@@ -52,7 +52,7 @@ class UI {
 
 
 
-document.addEventListener("DOMContentLoaded", UI.displayBooks); //display books
+
 document.querySelector("#book-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
