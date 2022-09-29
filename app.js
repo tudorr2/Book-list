@@ -7,8 +7,6 @@ class Book {
 }
 
 class UI {
- 
-
   static addBookToList(book) {
     const list = document.querySelector("#book-list");
 
@@ -49,10 +47,6 @@ class UI {
   }
 }
 
-
-
-
-
 document.querySelector("#book-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -74,3 +68,6 @@ document.querySelector("#book-list").addEventListener("click", (e) => {
   UI.deleteBook(e.target);
   UI.showAlert("Book removed", "success");
 });
+
+
+//LOCAL STORAGE
